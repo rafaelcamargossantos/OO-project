@@ -4,7 +4,14 @@ public class Book {
 	private String name;
 	private String description;
 	private double price;
+	private String isbn;
 	private Author author;
+
+	// Constructors
+	public Book(Author author){
+		this.author = author;
+		this.isbn = "000-00-00000-00-0";
+	}
 
 	// Getters and Setters
 	public void setName(String name){
@@ -28,9 +35,13 @@ public class Book {
 		return this.price;
 	}
 
-	public void setAuthor(Author author){
-		this.author = author;
+	public void setIsnb(String isbn){
+		this.isbn = isbn;
 	}
+	public String getIsbn(){
+		return this.isbn;
+	}
+
 	public Author getAuthor(){
 		return this.author;
 	}
@@ -41,10 +52,8 @@ public class Book {
 		System.out.println("Name: " + name);
 		System.out.println("Description: " + description);
 		System.out.println("Price: " + price);
-
-		if (this.hasAuthor()){
-			author.showDetail();
-		}
+		System.out.println("ISBN: " + isbn);
+		author.showDetail();
 		System.out.println("-------------");
 	}
 
@@ -54,9 +63,5 @@ public class Book {
 			return true;
 		}
 		else return false;
-	}
-
-	public boolean hasAuthor() {
-		return this.author != null;
 	}
 }
