@@ -19,7 +19,6 @@ public class Author {
 		return this.email;
 	}
 
-
 	public void showDetail() {
 		System.out.println("Author details");
 		System.out.println("Name: " + name);

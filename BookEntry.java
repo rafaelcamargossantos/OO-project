@@ -12,6 +12,5 @@ public class BookEntry {
 		book1.setAuthor(author1);
 
 		book1.showDetail();
-
 	}
 }

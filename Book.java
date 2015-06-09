@@ -35,8 +35,6 @@ public class Book {
 		return this.author;
 	}
 
-
-
 	public void showDetail() {
 
 		System.out.println("Book details");
