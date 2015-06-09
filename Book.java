@@ -1,11 +1,43 @@
 public class Book {
 
-	String name;
-	String description;
-	double price;
-	Author author;
-	
-	void showDetail() {
+	// Attributes
+	private String name;
+	private String description;
+	private double price;
+	private Author author;
+
+	// Getters and Setters
+	public void setName(String name){
+		this.name = name;
+	}
+	public String getName(){
+		return this.name;
+	}
+
+	public void setDescription(String description){
+		this.description = description;
+	}
+	public String getDescription(){
+		return this.description;
+	}
+
+	public void setPrice(double price){
+		this.price = price;
+	}
+	public double getPrice(){
+		return this.price;
+	}
+
+	public void setAuthor(Author author){
+		this.author = author;
+	}
+	public Author getAuthor(){
+		return this.author;
+	}
+
+
+
+	public void showDetail() {
 
 		System.out.println("Book details");
 		System.out.println("Name: " + name);
@@ -26,7 +58,7 @@ public class Book {
 		else return false;
 	}
 
-	boolean hasAuthor() {
+	public boolean hasAuthor() {
 		return this.author != null;
 	}
 }

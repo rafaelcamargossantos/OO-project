@@ -1,16 +1,15 @@
 public class BookEntry {
 	public static void main(String[] args){
-		
-		Book book1 = new Book();
-		book1.name = "Livro 1";
-		book1.description = "Primeiro livro";
-		book1.price = 59.99;
 
 		Author author1 = new Author();
-		author1.name = "Rafael Santos";
-		author1.email = "rafaelcamargossantos@gmail.com";
+		author1.setName("Rafael Santos");
+		author1.setEmail("rafaelcamargossantos@gmail.com");
 
-		book1.author = author1;
+		Book book1 = new Book();
+		book1.setName("Livro 1");
+		book1.setDescription("Primeiro livro");
+		book1.setPrice(59.99);
+		book1.setAuthor(author1);
 
 		book1.showDetail();
 
