@@ -18,8 +18,12 @@ public class Book {
 		System.out.println("-------------");
 	}
 
-	public void applydescount(double descount) {
-		this.price -= this.price * descount;
+	public boolean applydiscount(double discount) {
+		if (discount < 0.3){
+			this.price -= this.price * discount;
+			return true;
+		}
+		else return false;
 	}
 
 	boolean hasAuthor() {
