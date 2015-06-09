@@ -5,11 +5,12 @@ public class BookEntry {
 		author1.setName("Rafael Santos");
 		author1.setEmail("rafaelcamargossantos@gmail.com");
 
-		Book book1 = new Book(author1);
-		book1.setName("Livro 1");
-		book1.setDescription("Primeiro livro");
-		book1.setPrice(59.99);
+		Ebook ebook1 = new Ebook(author1);
+		ebook1.setName("Livro 1");
+		ebook1.setDescription("Primeiro livro");
+		ebook1.setPrice(59.99);
+		ebook1.setWaterMark("Esse Livro pertence a Rafael");
 
-		book1.showDetail();
+		ebook1.showDetail();
 	}
 }
