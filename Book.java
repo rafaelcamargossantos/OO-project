@@ -57,7 +57,7 @@ public class Book {
 		System.out.println("-------------");
 	}
 
-	public boolean applydiscount(double discount) {
+	public boolean applyDiscount(double discount) {
 		if (discount <= 0.3){
 			this.price -= this.price * discount;
 			return true;
