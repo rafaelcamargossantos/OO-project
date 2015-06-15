@@ -1,4 +1,4 @@
-public class Book {
+public abstract class Book {
 
 	// Attributes
 	private String name;
@@ -57,11 +57,5 @@ public class Book {
 		System.out.println("-------------");
 	}
 
-	public boolean applyDiscount(double discount) {
-		if (discount <= 0.3){
-			this.price -= this.price * discount;
-			return true;
-		}
-		else return false;
-	}
+	public abstract boolean applyDiscount(double discount);
 }

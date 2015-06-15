@@ -21,6 +21,7 @@ public class Ebook extends Book {
 	public boolean applydiscount(double discount) {
 		if (discount <= 0.15){
 			super.setPrice(super.getPrice() - super.getPrice()*discount);
+			System.out.println("discont applied to ebook")
 			return true;
 		}
 		else return false;
