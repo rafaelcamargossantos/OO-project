@@ -15,8 +15,8 @@ public class PrintedBook extends Book {
 	@Override
 	public boolean applyDiscount(double discount) {
 		if (discount <= 0.3){
-			this.price -= this.price * discount;
-			System.out.println("discont applied to printed book")
+			super.setPrice(super.getPrice() - super.getPrice()*discount);
+			System.out.println("discont applied to printed book");
 			return true;
 		}
 		else return false;

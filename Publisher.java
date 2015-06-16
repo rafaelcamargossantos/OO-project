@@ -1,0 +1,30 @@
+public class Publisher{
+
+	// Attributes
+	private String nomeFantasia;
+	private String razaoSocial;
+	private String cnpj;
+
+	// Getters and Setters
+	public void setNomeFantasia(String nomeFantasia){
+		this.nomeFantasia = nomeFantasia;
+	}
+	public String getNomeFantasia(){
+		return this.nomeFantasia;
+	}
+
+	public void setRazaoSocial(String razaoSocial){
+		this.razaoSocial = razaoSocial;
+	}
+	public String getRazaoSocial(){
+		return this.razaoSocial;
+	}
+
+	public void setCnpj(String cnpj){
+		this.cnpj = cnpj;
+	}
+	public String getCnpj(){
+		return this.cnpj;
+	}
+
+}
