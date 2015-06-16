@@ -11,9 +11,8 @@ public class ShoppingCart {
 	}
 
 	// Other Methods
-	public void add(Book book) {
-		book.applyDiscount(0.05);
-		total += book.getPrice();
-		System.out.println (book.getName() + " adicionado");
+	public void add(Product product) {
+		total += product.getPrice();
+		System.out.println (product + " adicionado");
 	}
 }

@@ -1,4 +1,4 @@
-public abstract class Book {
+public abstract class Book implements Product {
 
 	// Attributes
 	private String name;
